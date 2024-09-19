@@ -8,6 +8,7 @@ class CoffeeShopBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PageView(
+      physics: const NeverScrollableScrollPhysics(),
       controller: pageController,
       children: const [
         CoffeeMenuPage(),
